@@ -1,0 +1,201 @@
+/* Services.css */
+.about-us-container {
+    background-color: #f5f7fa; /* Light gray background */
+    min-height: 100vh;
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff; /* White */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    font-size: 2.8rem;
+    color: #1a3c6d; /* Dark blue */
+    margin-bottom: 15px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #555555;
+  }
+  
+  /* Sections */
+  .about-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .about-section h2 {
+    font-size: 2rem;
+    color: #1a3c6d;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .about-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #26a69a; /* Teal */
+    margin-top: 10px;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  /* Tech Grid */
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .tech-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tech-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tech-item h3 {
+    font-size: 1.4rem;
+    color: #1a3c6d;
+    margin-bottom: 10px;
+  }
+  
+  .tech-item p {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
+  /* Stats Grid */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .stat-item h3 {
+    font-size: 2rem;
+    color: #26a69a; /* Teal */
+    margin-bottom: 10px;
+  }
+  
+  .stat-item p {
+    font-size: 1.1rem;
+    color: #555555;
+  }
+  
+  /* CTA Section */
+  .cta {
+    text-align: center;
+    background-color: #f5f7fa;
+    padding: 60px 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #26a69a; /* Teal */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #007bff; /* Orange */
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d; /* Dark gray */
+    color: #ffffff;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      padding: 40px 20px;
+    }
+  
+    .header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+  
+    .about-section {
+      padding: 30px 15px;
+    }
+  
+    .about-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .tech-grid,
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .cta {
+      padding: 40px 15px;
+    }
+  
+    .cta-button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+    }
+  
+    .tech-item h3,
+    .stat-item h3 {
+      font-size: 1.2rem;
+    }
+  
+    .stat-item h3 {
+      font-size: 1.8rem;
+    }
+  }

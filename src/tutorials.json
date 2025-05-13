@@ -1,0 +1,84 @@
+[
+    {
+      "id": 1,
+      "title": "Getting Started with React",
+      "content": [
+        {
+          "type": "heading",
+          "value": "Introduction to React"
+        },
+        {
+          "type": "paragraph",
+          "value": "React is a JavaScript library for building user interfaces. It allows you to create reusable UI components and manage the state of your application efficiently."
+        },
+        {
+          "type": "list",
+          "value": [
+            "Components are the building blocks of a React app.",
+            "Props allow you to pass data to components.",
+            "State helps you manage dynamic data."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "value": "In this tutorial, you’ll learn how to set up a React project and create your first component."
+        }
+      ],
+      "quiz": {
+        "questions": [
+          {
+            "question": "What is React primarily used for?",
+            "options": [
+              "Building user interfaces",
+              "Managing databases",
+              "Server-side logic",
+              "Styling websites"
+            ],
+            "correctAnswer": "Building user interfaces"
+          },
+          {
+            "question": "What are props in React?",
+            "options": [
+              "A way to manage state",
+              "Data passed to components",
+              "CSS properties",
+              "Event handlers"
+            ],
+            "correctAnswer": "Data passed to components"
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "title": "Understanding useState",
+      "content": [
+        {
+          "type": "heading",
+          "value": "What is useState?"
+        },
+        {
+          "type": "paragraph",
+          "value": "The useState hook is a fundamental part of React’s functional components. It lets you add state to your components without writing a class."
+        },
+        {
+          "type": "paragraph",
+          "value": "Here’s an example: const [count, setCount] = useState(0); This creates a state variable 'count' initialized to 0, and a function 'setCount' to update it."
+        }
+      ],
+      "quiz": {
+        "questions": [
+          {
+            "question": "What does useState return?",
+            "options": [
+              "A state variable and an update function",
+              "A component",
+              "A promise",
+              "An event listener"
+            ],
+            "correctAnswer": "A state variable and an update function"
+          }
+        ]
+      }
+    }
+  ]

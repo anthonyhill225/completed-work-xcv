@@ -1,0 +1,233 @@
+/* Contact.css */
+.contact-container {
+    background-color: #f5f7fa; /* Light gray background */
+    min-height: 100vh;
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff; /* White */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    font-size: 2.8rem;
+    color: #1a3c6d; /* Dark blue */
+    margin-bottom: 15px;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #555555;
+  }
+  
+  /* Sections */
+  .contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    color: #1a3c6d;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .contact-section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #26a69a; /* Teal */
+    margin-top: 10px;
+  }
+  
+  /* Contact Info and Map */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .contact-details h3 {
+    font-size: 1.4rem;
+    color: #1a3c6d;
+    margin-bottom: 15px;
+  }
+  
+  .contact-details p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 10px;
+  }
+  
+  .contact-map iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #1a3c6d;
+    margin-bottom: 8px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #26a69a; /* Teal */
+    outline: none;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #26a69a; /* Teal */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #007bff; /* Orange */
+    transform: scale(1.02);
+  }
+  
+  .submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .form-status {
+    margin-top: 15px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .form-status.success {
+    color: #26a69a;
+  }
+  
+  .form-status.error {
+    color: #d32f2f;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d; /* Dark gray */
+    color: #ffffff;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    margin: 0 0 10px 0;
+  }
+  
+  .footer a {
+    color: #26a69a;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer a:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      padding: 40px 15px;
+    }
+  
+    .header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .header p {
+      font-size: 1rem;
+    }
+  
+    .contact-section {
+      padding: 30px 15px;
+    }
+  
+    .contact-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-map iframe {
+      height: 300px;
+    }
+  
+    .contact-form {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header h1 {
+      font-size: 1.8rem;
+    }
+  
+    .contact-section h2 {
+      font-size: 1.6rem;
+    }
+  
+    .contact-details p {
+      font-size: 1rem;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.95rem;
+    }
+  
+    .submit-button {
+      font-size: 1rem;
+    }
+  }
